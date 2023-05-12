@@ -6,9 +6,15 @@ function App() {
 
   const [entries, setEntries] = useState([{name: 'danger', post: 'I want to program'}])
 
+  function addNewPost(entry){
+    let tempPost = [...entries, entry];
+
+    setEntries(tempPost);
+  }
+
   return (
     <div>
-      <CreatePostForm/>
+      <CreatePostForm addNewPostProperty={addNewPost}/>
       <PostList parentEntries={entries} />
     </div>
   );

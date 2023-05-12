@@ -3,27 +3,28 @@ import React, { useState } from 'react';
 
 const CreatePostForm = (props) => {
     
-    const [personName, setPersonName] = useState('')
-    const [personPost, setPersonPost] = useState('')
+    const [name, setPersonName] = useState('')
+    const [post, setPersonPost] = useState('')
 
     function handleSubmit(event) {
-        event.preventDefault();
+        event.preventDefault(); // prevent page from refreshing
         let newPost = {
-            personName: personName,
-            personPost: personPost
+            name: name,
+            post: post
         }
         console.log(newPost)
+        props.addNewPostProperty(newPost)
     }
 
     return ( 
         <form onSubmit={handleSubmit}>
             <div>
                 <label>Name</label>
-                <input type="text" value={personName} onChange={(event) => setPersonName(event.target.value)}/>
+                <input type="text" value={name} onChange={(event) => setPersonName(event.target.value)}/>
             </div>
             <div>
                 <label>Post</label>
-                <input type="text" value={personPost} onChange={(event) => setPersonPost(event.target.value)}/>
+                <input type="text" value={post} onChange={(event) => setPersonPost(event.target.value)}/>
             </div>
             <div>
                 <button type='submit'>Post</button>
