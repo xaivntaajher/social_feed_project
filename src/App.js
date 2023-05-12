@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PostList from './Components/PostList/PostList';
-
+import CreatePostForm from './Components/PostList/CreatePostForm/CreatePostForm';
 
 function App() {
 
@@ -8,6 +8,7 @@ function App() {
 
   return (
     <div>
+      <CreatePostForm/>
       <PostList parentEntries={entries} />
     </div>
   );
