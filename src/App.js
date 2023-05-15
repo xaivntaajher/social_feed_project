@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PostList from './Components/PostList/PostList';
 import CreatePostForm from './Components/CreatePostForm/CreatePostForm';
 import NavBar from './Components/NavBar/NavBar';
-
+import './App.css'
 
 
 function App() {

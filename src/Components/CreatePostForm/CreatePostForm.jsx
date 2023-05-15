@@ -14,21 +14,28 @@ const CreatePostForm = (props) => {
         }
         console.log(newPost)
         props.addNewPostProperty(newPost)
+        
+        setPersonName('');
+        setPersonPost('');
     }
 
     return ( 
         <form onSubmit={handleSubmit} className='postform'>
-            <div className='input-name'>
-                <label>Name</label>
-                <input type="text" value={name} onChange={(event) => setPersonName(event.target.value)}/>
+            <div className='flex-container'>
+                <div className='input-label'>
+                    <label>Name</label>
+                    <label>Post</label>
+                </div>
             </div>
             <div className='input-post'>
                 <div>
-                    <label>Post</label>
-                    <input type="text" value={post} onChange={(event) => setPersonPost(event.target.value)}/>
+                    <input className='input-name-box' type="text" value={name} onChange={(event) => setPersonName(event.target.value)}/>
+                    <input className='input-post-box' type="text" value={post} onChange={(event) => setPersonPost(event.target.value)}/>
                 </div>
+            </div>
+            <div className='button'>
                 <div>
-                    <button type='submit'>Post</button>
+                    <button type='submit'className='button-setting'>Post</button>
                 </div>
             </div>
 

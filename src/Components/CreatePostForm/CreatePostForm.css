@@ -5,19 +5,60 @@
     border-color: black;
     border-radius: 5px;
     width: 600px;
-    height: 100px;
+    height: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin: auto;
+    background-color: white;
+    margin-top: 20px;
+    
 }
 
-.input-name {
+.input-label {
     display: flex;
-    width: 300px;
-    height: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 40px;
+    height: 50px;
+    margin-right: 120px;
 }
 
 .input-post {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 10px;
-    height: 50px;
+    height: 60px;
 }
 
+.button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 10px;
+    height: 50px;
+    margin-top: 60px;
+    margin-left: 150px;
+}
+
+.button-setting{
+    background-color: rgb(80, 140, 196);
+    border: none;
+    width: 75px;
+    height: 20px;
+    color: white;
+}
+
+.input-post-box{
+    width: 350px;
+    height: 50px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.input-name-box{
+    width: 350px;
+    height: 20px;
+    margin-top: 5px;
+}
