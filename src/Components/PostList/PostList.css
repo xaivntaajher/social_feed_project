@@ -1,0 +1,12 @@
+.postlist {
+    display: flex;
+    align-content: center;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    width: 600px;
+    height: auto;
+    margin: auto;
+
+}

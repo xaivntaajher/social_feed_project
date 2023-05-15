@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import PostList from './Components/PostList/PostList';
-import CreatePostForm from './Components/PostList/CreatePostForm/CreatePostForm';
-import NavBar from './Components/PostList/NavBar/NavBar';
-import './Components/PostList/NavBar/NavBar.css';
-import './Components/PostList/CreatePostForm/CreatePostForm.css';
+import CreatePostForm from './Components/CreatePostForm/CreatePostForm';
+import NavBar from './Components/NavBar/NavBar';
+
 
 
 function App() {
@@ -18,12 +17,12 @@ function App() {
 
   return (
     <div>
-      <header className='header'>
+      <header>
         <nav>
           <NavBar/>
         </nav>
       </header>
-        <div className='postform'>
+        <div>
           <CreatePostForm addNewPostProperty={addNewPost}/>
         </div>
         <div>
