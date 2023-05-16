@@ -15,9 +15,11 @@
 
 .active-like {
     background-color: green;
+    color: white;
 }
 .active-dislike {
     background-color: red;
+    color: white;
 }
 
 .inactive {
@@ -47,9 +49,11 @@
 }
 
 .postcontainer{
-    margin: 10px 60px;
+    margin: auto;
     background-color: white;
     border: 1px solid gray;
     border-radius: 5px;
-    box-shadow: 0 5px 5px 0 gray 0 5px 5px 0 gray
+    box-shadow: 1px 1px 2px gray;
+    width: 600px;
+    margin-top: 10px;
 }
