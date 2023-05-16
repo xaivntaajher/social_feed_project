@@ -2,7 +2,7 @@
     align-content: center;
     border: 1px;
     border-style: solid;
-    border-color: black;
+    border-color: gray;
     border-radius: 5px;
     width: 600px;
     height: 130px;
@@ -11,7 +11,8 @@
     justify-content: space-evenly;
     margin: auto;
     background-color: white;
-    margin-top: 20px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 2px gray;
     
 }
 
@@ -48,6 +49,7 @@
     width: 75px;
     height: 20px;
     color: white;
+    box-shadow: 0 5px 5px 0 gray 0 5px 5px 0 gray;
 }
 
 .input-post-box{

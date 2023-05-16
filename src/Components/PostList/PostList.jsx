@@ -1,30 +1,18 @@
-import React, { useState } from 'react';
-import '../PostList/PostList.css'
+import React, { useState } from "react";
+import "../PostList/PostList.css";
+import Post from "../Post/Post";
 
 const PostList = (props) => {
   
-    return ( 
-        <div className='postlist'>
-            <table>
-                <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Post</th>
-                </tr>
-                </thead>
-                <tbody>
-                {props.parentEntries.map((entry) => {
-                    return (
-                    <tr>
-                        <td>{entry.name}</td>
-                        <td>{entry.post}</td>
-                    </tr>
-                    )
-                })}
-                </tbody>
-             </table>
-        </div>
-     );
-}
- 
+  return (
+    <section className="postcontainer">
+      {props.parentEntries.map((post) => {
+        return (
+          <Post key={post.id} post={post}/>
+        );
+      })}
+    </section>
+  );
+};
+
 export default PostList;
