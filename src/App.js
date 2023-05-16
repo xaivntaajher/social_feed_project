@@ -5,7 +5,7 @@ import NavBar from "./Components/NavBar/NavBar";
 import "./App.css";
 
 function App() {
-  const [entries, setEntries] = useState([{ name: "", post: "" }]);
+  const [entries, setEntries] = useState([{ name: "Vegeta", post: "His power level is over 10,000!" }]);
 
   function addNewPost(entry) {
     let tempPost = [...entries, entry];
