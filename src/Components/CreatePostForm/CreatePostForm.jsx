@@ -8,15 +8,21 @@ const CreatePostForm = (props) => {
 
     function handleSubmit(event) {
         event.preventDefault(); // prevent page from refreshing
+        
+        if (!name || !post){
+            return;
+        }
+        
         let newPost = {
             name: name,
-            post: post
+            post: post,
         }
-        console.log(newPost)
+        // console.log(newPost)
         props.addNewPostProperty(newPost)
         
         setPersonName('');
         setPersonPost('');
+
     }
 
     return ( 

@@ -31,18 +31,14 @@ const Post = (props) => {
       <div>
         <p>{props.post.post}</p>
       </div>
-      <div className="click">
+    <div className="click">
         <button type="button" className={likeButton} onClick={handleClickLike}>
-          Like
+        Like
         </button>
-        <button
-          type="button"
-          className={dislikeButton}
-          onClick={handleClickDislike}
-        >
-          Dislike
+        <button type="button" className={dislikeButton} onClick={handleClickDislike}>
+        Dislike
         </button>
-      </div>
+    </div>
     </div>
   );
 };
