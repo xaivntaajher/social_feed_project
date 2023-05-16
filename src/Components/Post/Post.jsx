@@ -31,6 +31,9 @@ const Post = (props) => {
       <div>
         <p>{props.post.post}</p>
       </div>
+      <div className="date">
+      <p>{props.post.date}</p>
+    </div>
     <div className="click">
         <button type="button" className={likeButton} onClick={handleClickLike}>
         Like

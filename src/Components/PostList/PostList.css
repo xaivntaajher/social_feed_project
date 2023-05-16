@@ -57,3 +57,8 @@
     width: 600px;
     margin-top: 10px;
 }
+
+.date {
+    font-size: x-small;
+    color: gray;
+}

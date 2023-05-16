@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../CreatePostForm/CreatePostForm.css';
 
 const CreatePostForm = (props) => {
@@ -9,13 +9,14 @@ const CreatePostForm = (props) => {
     function handleSubmit(event) {
         event.preventDefault(); // prevent page from refreshing
         
-        if (!name || !post){
+        if (!name && !post){ //checks to see if empty,undefined or null and returns null, prevent form from submitting
             return;
         }
         
         let newPost = {
             name: name,
             post: post,
+            date: new Date().toLocaleDateString()
         }
         // console.log(newPost)
         props.addNewPostProperty(newPost)
